@@ -1,0 +1,20 @@
+{
+   "description": "Redirects Azure DevOps from the old {org}.visualstudio.com/{project} domain to dev.azure.com/{org}/{project}",
+   "manifest_version": 3,
+   "name": "Azure DevOps Redirect",
+   "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+   },
+   "permissions": [ "declarativeNetRequest" ],
+   "declarative_net_request": {
+      "rule_resources": [{
+         "id": "ruleset_1",
+         "enabled": true,
+         "path": "rules_1.json"
+      }]
+   },
+   "host_permissions": [ "https://*.visualstudio.com/*" ],
+   "version": "0.0.0.1"
+}

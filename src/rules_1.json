@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://dev.azure.com/msazure/\\1/\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://msazure.visualstudio.com/(.*)/(.*)",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
