@@ -1,15 +1,29 @@
 [
   {
     "id": 1,
+    "priority": 10,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://dev.azure.com/\\1/\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://(.*).visualstudio.com/DefaultCollection/(.*)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
     "priority": 1,
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://dev.azure.com/msazure/\\1/\\2"
+        "regexSubstitution": "https://dev.azure.com/\\1/\\2"
       }
     },
     "condition": {
-      "regexFilter": "^https://msazure.visualstudio.com/(.*)/(.*)",
+      "regexFilter": "^https://(.*).visualstudio.com/(.*)",
       "resourceTypes": ["main_frame"]
     }
   }
