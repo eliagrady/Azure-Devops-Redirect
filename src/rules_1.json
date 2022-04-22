@@ -9,7 +9,7 @@
       }
     },
     "condition": {
-      "regexFilter": "^https://(.*).visualstudio.com/DefaultCollection/(.*)",
+      "regexFilter": "^https://(msazure).visualstudio.com/DefaultCollection/(.*)",
       "resourceTypes": ["main_frame"]
     }
   },
@@ -23,7 +23,7 @@
       }
     },
     "condition": {
-      "regexFilter": "^https://(.*).visualstudio.com/(.*)",
+      "regexFilter": "^https://(msazure).visualstudio.com/(.*)",
       "resourceTypes": ["main_frame"]
     }
   }
